@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Text</title>
+</head>
+<body>
+    <h1>Original Text Data</h1>
+    <div>
+        {% for line in original_lines %}
+            <pre>{{ line }}</pre>
+        {% endfor %}
+    </div>
+    <a href="/preprocess">View Preprocessed Text</a>
+    <a href="/augment">View Augmented Text</a>
+</body>
+</html>

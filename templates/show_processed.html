@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show {{ mode }} Text</title>
+</head>
+<body>
+    <h1>{{ mode }} Text Data</h1>
+    <table border="1">
+        <tr>
+            <th>Original</th>
+            <th>{{ mode }}</th>
+        </tr>
+        {% for original, processed in combined %}
+        <tr>
+            <td><pre>{{ original }}</pre></td>
+            <td><pre>{{ processed }}</pre></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/choose_action">Back to Options</a>
+</body>
+</html>
